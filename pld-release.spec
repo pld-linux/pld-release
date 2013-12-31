@@ -1,6 +1,6 @@
 
 %bcond_with	snap	# include shapshot information in version,
-			# should be used only in official Th spanhots
+			# should be used only in official Th snaphots
 
 %define snapshot	2013
 
@@ -40,7 +40,7 @@ Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		pld-release
 Version:	%{distversion}
-Release:	2%{?with_snap:.%{snapshot}}
+Release:	3%{?with_snap:.%{snapshot}}
 License:	GPL
 Group:		Base
 Conflicts:	issue < 3.0-1
