@@ -1,6 +1,6 @@
 
 %bcond_with	snap	# include shapshot information in version,
-			# should be used only in official Th snaphots
+			# should be used only in official Th snapshots
 
 %define snapshot	2013
 
