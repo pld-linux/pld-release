@@ -40,9 +40,10 @@ Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		pld-release
 Version:	%{distversion}
-Release:	4%{?with_snap:.%{snapshot}}
+Release:	5%{?with_snap:.%{snapshot}}
 License:	GPL
 Group:		Base
+Provides:	system-release(releasever) = %{distversion}
 Conflicts:	issue < 3.0-1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
