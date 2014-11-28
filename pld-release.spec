@@ -18,6 +18,7 @@
 %define	distversion	3.0
 %define	distrelease	"%{distversion} PLD Linux (%{distname})"
 
+%define		rel	5%{?with_snap:.%{snapshot}}
 Summary:	PLD Linux release file
 Summary(cs.UTF-8):	Soubor s číslem verze systému PLD Linux
 Summary(da.UTF-8):	PLD Linux release fil
@@ -40,7 +41,7 @@ Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		pld-release
 Version:	%{distversion}
-Release:	5%{?with_snap:.%{snapshot}}
+Release:	%{rel}
 License:	GPL
 Group:		Base
 Provides:	system-release(releasever) = %{distversion}
