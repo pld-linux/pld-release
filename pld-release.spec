@@ -18,7 +18,7 @@
 %define	distversion	3.0
 %define	distrelease	"%{distversion} PLD Linux (%{distname})"
 
-%define		rel	7
+%define		rel	8
 Summary:	PLD Linux release file
 Summary(cs.UTF-8):	Soubor s číslem verze systému PLD Linux
 Summary(da.UTF-8):	PLD Linux release fil
@@ -116,6 +116,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 echo %{distrelease} > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
+ln -sf pld-release $RPM_BUILD_ROOT%{_sysconfdir}/system-release
 
 cat >$RPM_BUILD_ROOT%{_sysconfdir}/os-release <<EOF
 NAME="PLD Linux"
@@ -136,3 +137,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_sysconfdir}/os-release
 %{_sysconfdir}/pld-release
+%{_sysconfdir}/system-release
