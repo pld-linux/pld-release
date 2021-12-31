@@ -18,7 +18,7 @@
 %define	distversion	3.0
 %define	distrelease	"PLD Linux (%{distname}) release %{distversion}"
 
-%define		rel	14
+%define		rel	15
 Summary:	PLD Linux release file
 Summary(cs.UTF-8):	Soubor s číslem verze systému PLD Linux
 Summary(da.UTF-8):	PLD Linux release fil
