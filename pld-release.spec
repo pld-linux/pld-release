@@ -2,7 +2,7 @@
 %bcond_with	snap	# include shapshot information in version,
 			# should be used only in official Th snapshots
 
-%define snapshot	2021
+%define snapshot	2022
 
 # CPE_NAME = cpe:/ {part} : {vendor} : {product} : {version} : {update} : {edition} : {language}
 # http://cpe.mitre.org/specification/
